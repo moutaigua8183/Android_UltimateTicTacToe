@@ -1,0 +1,98 @@
+<resources>
+    <string name="app_name">UltimateTicTacToe</string>
+    <string name="facebook_app_id">398020250573867</string>
+    <string name="fb_login_protocol_scheme">fbAPP_ID</string>
+
+
+    <string name="update_required">Update is required for the game running properly. Please update the game on Google Play Store.</string>
+
+    <string name="login_txtview_title">Ultimate\nTic Tac Toe</string>
+    <string name="login_editxt_email_hint">Email</string>
+    <string name="login_editxt_password_hint">Password</string>
+    <string name="login_btn_sign_in">sign in</string>
+    <string name="login_txtview_sign_up">Sign up</string>
+    <string name="login_txtview_forget_password">Forgot password</string>
+    <string name="register_editxt_username_hint">Username</string>
+    <string name="register_editxt_country_hint">Country</string>
+    <string name="register_btn_register">register</string>
+    <string name="complete_profile_txtview_title">Profile</string>
+    <string name="complete_profile_btn_confirm">confirm</string>
+
+
+    <string name="main_txtview_title">Ultimate\nTic Tac Toe</string>
+    <string name="main_btn_multiplayer">Multiplayer</string>
+    <string name="main_btn_online">Online</string>
+    <string name="main_btn_leaderboard">Leaderboard</string>
+    <string name="main_btn_how_to">How to Play</string>
+    <string name="main_btn_setting">Setting</string>
+    <string name="main_btn_exit">Exit</string>
+
+    <string name="online_txtview_matching">Matching...</string>
+    <string name="online_btn_matching_cancel">Cancel</string>
+
+    <string name="leaderboard_txtview_title">Leaderboard</string>
+    <string name="leaderboard_txtview_table_head_rank">Rank</string>
+    <string name="leaderboard_txtview_table_head_username">Username</string>
+    <string name="leaderboard_txtview_table_head_rate">Win</string>
+    <string name="leaderboard_txtview_table_head_country">From</string>
+
+
+    <string name="howtoplay_txtview_title">How To Play</string>
+    <string name="howtoplay_txtview_introduction">
+        Ultimate tic-tac-toe also known as super tic-tac-toe is a board game composed of
+        nine tic-tac-toe boards arranged in a 3-by-3 grid. Players take turns playing in
+        the smaller tic-tac-toe boards until one of them wins in the larger tic-tac-toe board.
+        Each small 3-by-3 tic-tac-toe board is referred to as a <u>local board</u>, and the
+        larger 3-by-3 board is referred to as the <u>global board</u>.
+    </string>
+    <string name="howtoplay_txtview_rules_para1">
+        The game starts with X playing wherever he wants in any of the 81 empty spots. This move
+        \'sends\' his opponent to its relative location. In the example below, since <b>X</b> played
+        in the top-right corner of the middle <u>local board</u>, <b>O</b> is forced to play his
+        next move in the top-right <u>local board</u>. Similarly, <b>O</b>\'s move forces <b>X</b>
+        to play only in the left <u>local board</u>.
+    </string>
+    <string name="howtoplay_txtview_rules_para2">
+        If a player is sent to an already completed <u>local board</u> (either won by either
+        player or tied), then that player may play in any legal spot in the board.\n
+        \n
+        If a move is played so that it is to win a <u>local board</u> by the rules of normal
+        tic-tac-toe, then it wins that <u>local board</u>. Game play ends when either a player
+        wins the <u>global board</u>, or there are no legal moves remaining.
+    </string>
+
+
+    <string name="setting_txtview_title">Settings</string>
+    <string name="setting_txtview_subtitle_game">Game</string>
+    <string name="setting_txtview_subtitle_sound">Sound</string>
+    <string name="setting_txtview_invitable">Invitable</string>
+    <string name="setting_txtview_sound_effect">Sound Effect</string>
+    <string name="setting_btn_feedback">Feedback</string>
+    <string name="setting_btn_log_out">Log Out</string>
+
+
+    <string name="game_button_to_ready">Ready</string>
+    <string name="game_button_after_ready">Waiting</string>
+    <string name="game_button_surrender">Surrender</string>
+    <string name="game_button_start_new_game">Start New Game</string>
+    <string name="game_button_confirm">Yes</string>
+    <string name="game_message_me_ready_first">Are you ready?</string>
+    <string name="game_message_opponent_not_ready">Your opponent is not ready</string>
+    <string name="game_message_ready">Ready</string>
+    <string name="game_message_away">Away</string>
+    <string name="game_message_make_move_hint">Make move or lose game\n</string>
+    <string name="game_message_me_inactive">You keep your opponent waiting for too long so as to lose the game. What do you want to do next?</string>
+    <string name="game_message_opponent_inactive">Your opponent keeps away for too long and is forced to leave the room. You will be granted a free win. What do you want to do next?</string>
+    <string name="game_message_surrender">Surrender?</string>
+    <string name="game_message_your_turn">Your turn</string>
+    <string name="game_message_win">Yeah, you win!</string>
+    <string name="game_message_lose">Oops, you lose!</string>
+    <string name="game_message_tie">It\'s a tie</string>
+    <string name="game_message_opponent_surrender">Your opponent surrendered\nand you win!</string>
+    <string name="game_message_normal_exit">Exit?</string>
+    <string name="game_message_abnormal_exit">Leaving in the middle of a game would lead to your lose. Do you want to exit?</string>
+    <string name="game_message_opponent_exit">Your opponent has left the room. Do you want to look for a new match?</string>
+
+
+
+</resources>

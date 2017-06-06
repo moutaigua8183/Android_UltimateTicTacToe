@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    android:weightSum="1">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.2">
+
+        <TextView
+            style="@style/ActivityTitle"
+            android:id="@+id/activity_how_to_play_txtview_title"
+            android:text="@string/howtoplay_txtview_title" />
+
+        </RelativeLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.8">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:scrollbars="none">
+
+            <LinearLayout
+                android:id="@+id/activity_how_to_play_layout_content_holder"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+                <TextView
+                    style="@style/HowToPlayContent"
+                    android:id="@+id/activity_how_to_play_txtview_introduction"
+                    android:text="@string/howtoplay_txtview_introduction" />
+                <ImageView
+                    android:layout_width="300dp"
+                    android:layout_height="300dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginBottom="15dp"
+                    android:layout_gravity="center_horizontal"
+                    android:src="@drawable/how_to_play_pic_1"/>
+                <TextView
+                    style="@style/HowToPlayContent"
+                    android:id="@+id/activity_how_to_play_txtview_rules_para1"
+                    android:text="@string/howtoplay_txtview_rules_para1" />
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginBottom="15dp"
+                    android:layout_gravity="center_horizontal">
+                    <ImageView
+                        android:layout_width="150dp"
+                        android:layout_height="150dp"
+                        android:layout_alignParentLeft="true"
+                        android:src="@drawable/how_to_play_pic_2"/>
+                    <ImageView
+                        android:layout_width="150dp"
+                        android:layout_height="150dp"
+                        android:layout_alignParentRight="true"
+                        android:src="@drawable/how_to_play_pic_3"/>
+                    </RelativeLayout>
+                <TextView
+                    style="@style/HowToPlayContent"
+                    android:id="@+id/activity_how_to_play_txtview_rules_para2"
+                    android:text="@string/howtoplay_txtview_rules_para2" />
+                <Space
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp" />
+            </LinearLayout>
+        </ScrollView>
+
+    </RelativeLayout>
+
+</LinearLayout>

@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView style="@style/BoardGlobalScreen" android:id="@+id/board_imgview_bg" />
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/board_global"
+        android:weightSum="3">
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:weightSum="3">
+            <FrameLayout style="@style/BoardLocal" >
+                <ImageView style="@style/BoardLocalScreen" android:id="@+id/board_global_0_imgview_bg" />
+                <include layout="@layout/board_local" android:id="@+id/board_global_0_button_group"/>
+            </FrameLayout>
+            <ImageView style="@style/BoardGlobalVerticalDivider" />
+            <FrameLayout style="@style/BoardLocal" >
+                <ImageView style="@style/BoardLocalScreen" android:id="@+id/board_global_1_imgview_bg" />
+                <include layout="@layout/board_local" android:id="@+id/board_global_1_button_group"/>
+            </FrameLayout>
+            <ImageView style="@style/BoardGlobalVerticalDivider" />
+            <FrameLayout style="@style/BoardLocal" >
+                <ImageView style="@style/BoardLocalScreen" android:id="@+id/board_global_2_imgview_bg" />
+                <include layout="@layout/board_local" android:id="@+id/board_global_2_button_group"/>
+            </FrameLayout>
+        </LinearLayout>
+
+        <ImageView style="@style/BoardGlobalHorizontalDivider" />
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:weightSum="3">
+            <FrameLayout style="@style/BoardLocal" >
+                <ImageView style="@style/BoardLocalScreen" android:id="@+id/board_global_3_imgview_bg" />
+                <include layout="@layout/board_local" android:id="@+id/board_global_3_button_group"/>
+            </FrameLayout>
+            <ImageView style="@style/BoardGlobalVerticalDivider" />
+            <FrameLayout style="@style/BoardLocal" >
+                <ImageView style="@style/BoardLocalScreen" android:id="@+id/board_global_4_imgview_bg" />
+                <include layout="@layout/board_local" android:id="@+id/board_global_4_button_group"/>
+            </FrameLayout>
+            <ImageView style="@style/BoardGlobalVerticalDivider" />
+            <FrameLayout style="@style/BoardLocal" >
+                <ImageView style="@style/BoardLocalScreen" android:id="@+id/board_global_5_imgview_bg" />
+                <include layout="@layout/board_local" android:id="@+id/board_global_5_button_group"/>
+            </FrameLayout>
+        </LinearLayout>
+
+        <ImageView style="@style/BoardGlobalHorizontalDivider" />
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:weightSum="3">
+            <FrameLayout style="@style/BoardLocal" >
+                <ImageView style="@style/BoardLocalScreen" android:id="@+id/board_global_6_imgview_bg" />
+                <include layout="@layout/board_local" android:id="@+id/board_global_6_button_group"/>
+            </FrameLayout>
+            <ImageView style="@style/BoardGlobalVerticalDivider" />
+            <FrameLayout style="@style/BoardLocal" >
+                <ImageView style="@style/BoardLocalScreen" android:id="@+id/board_global_7_imgview_bg" />
+                <include layout="@layout/board_local" android:id="@+id/board_global_7_button_group"/>
+            </FrameLayout>
+            <ImageView style="@style/BoardGlobalVerticalDivider" />
+            <FrameLayout style="@style/BoardLocal" >
+                <ImageView style="@style/BoardLocalScreen" android:id="@+id/board_global_8_imgview_bg" />
+                <include layout="@layout/board_local" android:id="@+id/board_global_8_button_group"/>
+            </FrameLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+</FrameLayout>
+
+

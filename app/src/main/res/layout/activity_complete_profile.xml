@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    android:weightSum="1"
+    tools:context=".ActivityRegister">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.3">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/activity_complete_profile_txtview_title"
+            android:layout_centerInParent="true"
+            android:text="@string/complete_profile_txtview_title"
+            android:textColor="@android:color/white"
+            android:textSize="26dp"/>
+
+        </RelativeLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.7"
+        >
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="65dp"
+            android:layout_marginRight="65dp">
+
+            <TextView
+                style="@style/LogInUpError"
+                android:layout_marginBottom="10dp"
+                android:id="@+id/activity_complete_profile_txtview_result" />
+
+            <EditText
+                style="@style/LoginInput"
+                android:id="@+id/activity_complete_profile_editxt_username"
+                android:inputType="textEmailAddress"
+                android:hint="@string/register_editxt_username_hint"/>
+            <EditText
+                style="@style/LoginInput"
+                android:id="@+id/activity_complete_profile_editxt_country"
+                android:layout_marginTop="10dp"
+                android:inputType="none"
+                android:focusable="false"
+                android:hint="@string/register_editxt_country_hint" />
+            <Button
+                style="@style/LogInUpButton"
+                android:id="@+id/activity_complete_profile_btn_confirm"
+                android:layout_marginTop="40dp"
+                android:text="@string/complete_profile_btn_confirm" />
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+
+</LinearLayout>

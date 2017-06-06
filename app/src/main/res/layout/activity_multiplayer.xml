@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background">
+
+    <RelativeLayout style="@style/MultiplayerControlPanel"
+        android:rotation="180">
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center_vertical" >
+            <ImageView
+                style="@style/MultiplayerScoreAvater"
+                android:id="@+id/activity_multiplayer_imgview_upper_player1_avatar"
+                android:src="@drawable/player1_x"/>
+            <TextView
+                style="@style/MultiplayerScoreText"
+                android:id="@+id/activity_multiplayer_txtview_upper_player1_score"
+                android:layout_marginLeft="15dp"
+                android:text="0" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_centerHorizontal="true">
+            <TextView
+                style="@style/MultiplayerDisplay"
+                android:id="@+id/activity_multiplayer_txtview_player2_display" />
+            <Button
+                style="@style/MultiplayerButton"
+                android:id="@+id/activity_multiplayer_btn_upper_restart"
+                android:text="@string/game_button_to_ready" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center_vertical" >
+            <TextView
+                style="@style/MultiplayerScoreText"
+                android:id="@+id/activity_multiplayer_txtview_upper_player2_score"
+                android:layout_marginRight="15dp"
+                android:text="0" />
+
+            <ImageView
+                style="@style/MultiplayerScoreAvater"
+                android:id="@+id/activity_multiplayer_imgview_upper_player2_avatar"
+                android:src="@drawable/player2_o"/>
+        </LinearLayout>
+    </RelativeLayout>
+
+    
+
+
+    <RelativeLayout style="@style/MultiplayerBoardRelativeLayout">
+        <FrameLayout
+            xmlns:tools="http://schemas.android.com/tools"
+            android:layout_width="380dp"
+            android:layout_height="380dp"
+            android:id="@+id/activity_multiplayer_board_fragment_holder"
+            android:background="@android:color/darker_gray"
+            tools:layout="@layout/board_global"/>
+    </RelativeLayout>
+
+
+
+
+
+    <RelativeLayout style="@style/MultiplayerControlPanel">
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center_vertical" >
+            <ImageView
+                style="@style/MultiplayerScoreAvater"
+                android:id="@+id/activity_multiplayer_imgview_lower_player1_avatar"
+                android:src="@drawable/player1_x"/>
+            <TextView
+                style="@style/MultiplayerScoreText"
+                android:id="@+id/activity_multiplayer_txtview_lower_player1_score"
+                android:layout_marginLeft="15dp"
+                android:text="0" />
+            </LinearLayout>
+        
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true">
+            <TextView
+                style="@style/MultiplayerDisplay"
+                android:id="@+id/activity_multiplayer_txtview_lower_display" />
+            <Button
+                style="@style/MultiplayerButton"
+                android:id="@+id/activity_multiplayer_btn_lower_restart"
+                android:text="@string/game_button_to_ready" />
+
+            </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center_vertical" >
+            <TextView
+                style="@style/MultiplayerScoreText"
+                android:id="@+id/activity_multiplayer_txtview_lower_player2_score"
+                android:layout_marginRight="15dp"
+                android:text="0" />
+
+            <ImageView
+                style="@style/MultiplayerScoreAvater"
+                android:id="@+id/activity_multiplayer_imgview_lower_player2_avatar"
+                android:src="@drawable/player2_o"/>
+            </LinearLayout>
+    </RelativeLayout>
+
+
+
+
+</LinearLayout>

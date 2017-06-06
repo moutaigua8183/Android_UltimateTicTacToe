@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background">
+
+
+    
+    <RelativeLayout style="@style/OnlineOpponentInfoPanel" >
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="300dp"
+            android:layout_height="100dp"
+            android:id="@+id/activity_online_layout_opponent_block"
+            android:layout_centerInParent="true"
+            android:background="@drawable/online_opponent_info_panel_out_turn">
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:gravity="center_vertical" >
+                <ImageView
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:id="@+id/activity_online_imgview_opponent_flag"
+                    android:layout_marginRight="20dp"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:id="@+id/activity_online_txtview_opponent_name"
+                    android:gravity="center"
+                    tools:text="moutaigua8183"
+                    android:textColor="@android:color/black"
+                    android:textSize="25dp" />
+                </LinearLayout>
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="5dp">
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:id="@+id/activity_online_imgview_opponent_indicator"
+                    android:layout_gravity="center_vertical"
+                    android:visibility="gone"
+                    tools:visibility="visible"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/activity_online_txtview_opponent_display"
+                    android:layout_gravity="center_vertical"
+                    tools:text="Ready"
+                    tools:textColor="@color/primary"
+                    android:textSize="25dp" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+
+
+    <RelativeLayout style="@style/OnlineBoardRelativeLayout">
+        <FrameLayout
+            android:layout_width="380dp"
+            android:layout_height="380dp"
+            android:id="@+id/activity_online_board_fragment_holder"
+            android:layout_centerInParent="true"
+            android:background="@android:color/darker_gray"/>
+        </RelativeLayout>
+
+
+    <RelativeLayout style="@style/OnlineControlPanel">
+        <TextView
+            style="@style/OnlineMyDisplay"
+            android:id="@+id/activity_online_txtview_my_display"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="20dp"/>
+        <Button
+            style="@style/OnlineButton"
+            android:id="@+id/activity_online_btn_restart"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="20dp"
+            android:text="@string/game_button_to_ready" />
+        </RelativeLayout>
+
+</LinearLayout>

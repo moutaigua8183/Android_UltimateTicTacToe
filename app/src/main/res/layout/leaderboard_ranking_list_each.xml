@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/LeaderboardTableRow"
+    android:background="@color/background"
+    android:gravity="center_vertical">
+    <TextView
+        style="@style/LeaderboardTableCol1"
+        android:id="@+id/ranking_list_each_txtview_index"
+        />
+
+    <TextView
+        style="@style/LeaderboardTableCol2"
+        android:id="@+id/ranking_list_each_txtview_username"
+        android:layout_toRightOf="@+id/ranking_list_each_txtview_index" />
+
+    <TextView
+        style="@style/LeaderboardTableCol3"
+        android:id="@+id/ranking_list_each_txtview_rate"
+        android:layout_toLeftOf="@+id/ranking_list_each_imgview_flag" />
+
+    <ImageView
+        style="@style/LeaderboardTableCol4"
+        android:id="@+id/ranking_list_each_imgview_flag" />
+</RelativeLayout>

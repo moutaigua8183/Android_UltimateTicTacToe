@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/transparency"
+    android:weightSum="3" >
+    
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@color/transparency"
+        android:weightSum="3">
+        <ImageButton
+            style="@style/BoardCell"
+            android:id="@+id/board_local_imgbtn_0"/>
+        <ImageView style="@style/BoardLocalVerticalDivider" />
+        <ImageButton
+            style="@style/BoardCell"
+            android:id="@+id/board_local_imgbtn_1"/>
+        <ImageView style="@style/BoardLocalVerticalDivider" />
+        <ImageButton
+            style="@style/BoardCell"
+            android:id="@+id/board_local_imgbtn_2"/>
+    </LinearLayout>
+
+    <ImageView style="@style/BoardLocalHorizontalDivider" />
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:weightSum="3">
+        <ImageButton
+            style="@style/BoardCell"
+            android:id="@+id/board_local_imgbtn_3"/>
+        <ImageView style="@style/BoardLocalVerticalDivider" />
+        <ImageButton
+            style="@style/BoardCell"
+            android:id="@+id/board_local_imgbtn_4"/>
+        <ImageView style="@style/BoardLocalVerticalDivider" />
+        <ImageButton
+            style="@style/BoardCell"
+            android:id="@+id/board_local_imgbtn_5"/>
+    </LinearLayout>
+
+    <ImageView style="@style/BoardLocalHorizontalDivider" />
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:weightSum="3">
+        <ImageButton
+            style="@style/BoardCell"
+            android:id="@+id/board_local_imgbtn_6"/>
+        <ImageView style="@style/BoardLocalVerticalDivider" />
+        <ImageButton
+            style="@style/BoardCell"
+            android:id="@+id/board_local_imgbtn_7"/>
+        <ImageView style="@style/BoardLocalVerticalDivider" />
+        <ImageButton
+            style="@style/BoardCell"
+            android:id="@+id/board_local_imgbtn_8"/>
+    </LinearLayout>
+
+</LinearLayout>

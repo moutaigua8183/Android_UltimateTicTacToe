@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.3">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/activity_main_txtview_title"
+            android:layout_gravity="center"
+            android:text="@string/main_txtview_title"
+            android:textColor="@android:color/white"
+            android:textSize="20sp"
+            android:gravity="center"/>
+    </FrameLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.7">
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="30dp" />
+
+        <Button style="@style/MainButton"
+            android:id="@+id/activity_main_btn_multiplayer"
+            android:text="@string/main_btn_multiplayer" />
+
+        <Button style="@style/MainButton"
+            android:id="@+id/activity_main_btn_online"
+            android:text="@string/main_btn_online" />
+
+        <Button style="@style/MainButton"
+            android:id="@+id/activity_main_btn_leaderboard"
+            android:text="@string/main_btn_leaderboard" />
+
+        <Button style="@style/MainButton"
+            android:id="@+id/activity_main_btn_how_to"
+            android:text="@string/main_btn_how_to" />
+
+        <Button style="@style/MainButton"
+            android:id="@+id/activity_main_btn_setting"
+            android:text="@string/main_btn_setting" />
+
+        <Button style="@style/MainButton"
+            android:id="@+id/activity_main_btn_exit"
+            android:text="@string/main_btn_exit" />
+
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/activity_main_txtview_version"
+        android:layout_gravity="center_horizontal"
+        tools:text="Version 1.0"
+        android:textColor="@android:color/black"
+        android:gravity="center_horizontal"
+        />
+
+
+</LinearLayout>

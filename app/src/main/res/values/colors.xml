@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+
+
+    <color name="background">#4da6ff</color>
+    <color name="primary">#ffbe00</color>
+    <color name="warning">#ff8080</color>
+    <color name="transparency">#00FFFFFF</color>
+    <color name="white_blur">#EEFFFFFF</color>
+    <color name="player1_primary">#1C88ED</color>
+    <color name="player1_secondary">#B5D3FF</color>
+    <color name="player2_primary">#FFFF3333</color>
+    <color name="player2_secondary">#FFBFBF</color>
+
+    <color name="online_opponent_ready">@color/primary</color>
+    <color name="online_opponent_away">#b30000</color>
+
+    <color name="setting_subtitle">#cccccc</color>
+</resources>

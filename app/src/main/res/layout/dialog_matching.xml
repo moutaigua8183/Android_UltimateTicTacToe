@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:paddingTop="30dp"
+        android:paddingBottom="30dp"
+        android:background="@color/transparency">
+
+
+        <com.wang.avi.AVLoadingIndicatorView
+            android:id="@+id/dialog_matching_view"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_gravity="center_horizontal"
+            app:indicatorName="BallClipRotateMultipleIndicator"
+            app:indicatorColor="@android:color/white"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/dialog_matching_txtview_matching"
+            android:layout_marginTop="30dp"
+            android:layout_gravity="center_horizontal"
+            android:text="@string/online_txtview_matching"
+            android:textColor="@android:color/white"
+            android:textSize="15dp"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/dialog_matching_txtview_online_number"
+            android:layout_marginTop="10dp"
+            android:layout_gravity="center_horizontal"
+            tools:text="Total online users: 12"
+            android:textColor="@android:color/white"
+            android:textSize="15dp"
+            />
+
+        <Button
+            style="@style/OnlineButton"
+            android:id="@+id/dialog_matching_btn_cancel"
+            android:layout_marginTop="20dp"
+            android:layout_gravity="center_horizontal"
+            android:text="@string/online_btn_matching_cancel"
+            android:textColor="@android:color/white"
+            android:textSize="15dp"
+            />
+
+
+
+
+
+    </LinearLayout>
+
+
+
+</RelativeLayout>

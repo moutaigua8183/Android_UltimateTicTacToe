@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    android:weightSum="1">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.2">
+
+        <TextView
+            style="@style/ActivityTitle"
+            android:id="@+id/activity_setting_txtview_title"
+            android:text="@string/setting_txtview_title" />
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.8"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp">
+
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="fill_parent"
+            android:layout_above="@+id/activity_setting_btn_log_out">
+
+            <TextView
+                style="@style/SettingSubtitle"
+                android:layout_marginTop="10dp"
+                android:text="@string/setting_txtview_subtitle_game"/>
+            <!--invite-->
+            <RelativeLayout style="@style/SettingRow">
+                <TextView
+                    style="@style/SettingItemText"
+                    android:id="@+id/activity_setting_txtview_item_invitable"
+                    android:text="@string/setting_txtview_invitable"/>
+                <ToggleButton
+                    style="@style/SettingToggle"
+                    android:id="@+id/activity_setting_toggle_invitable"
+                    tools:checked="true" />
+            </RelativeLayout>
+
+            <TextView
+                style="@style/SettingSubtitle"
+                android:layout_marginTop="10dp"
+                android:text="@string/setting_txtview_subtitle_sound"/>
+            <!--invite-->
+            <RelativeLayout style="@style/SettingRow">
+                <TextView
+                    style="@style/SettingItemText"
+                    android:id="@+id/activity_setting_txtview_item_sound_effect"
+                    android:text="@string/setting_txtview_sound_effect"/>
+                <ToggleButton
+                    style="@style/SettingToggle"
+                    android:id="@+id/activity_setting_toggle_sound_effect"
+                    tools:checked="true" />
+            </RelativeLayout>
+
+
+        </LinearLayout>
+
+
+        <!--feedback-->
+        <Button
+            style="@style/SettingButton"
+            android:id="@+id/activity_setting_btn_feedback"
+            android:layout_above="@+id/activity_setting_btn_log_out"
+            android:layout_marginBottom="20dp"
+            android:text="@string/setting_btn_feedback" />
+
+        <!--log out-->
+        <Button
+            style="@style/SettingButton"
+            android:id="@+id/activity_setting_btn_log_out"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="50dp"
+            android:text="@string/setting_btn_log_out" />
+
+    </RelativeLayout>
+
+</LinearLayout>

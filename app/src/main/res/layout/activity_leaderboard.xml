@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    android:weightSum="1"
+    >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.2">
+
+        <TextView
+            style="@style/ActivityTitle"
+            android:id="@+id/activity_leaderboard_txtview_title"
+            android:text="@string/leaderboard_txtview_title" />
+
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.8"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        >
+        <!--table head-->
+        <RelativeLayout
+            style="@style/LeaderboardTableRow"
+            android:layout_marginBottom="0dp"
+            android:gravity="center_vertical">
+            <TextView
+                style="@style/LeaderboardTableCol1"
+                android:id="@+id/activity_leaderboard_txtview_table_col_rank"
+                android:textSize="17dp"
+                android:textStyle="bold"
+                android:text="@string/leaderboard_txtview_table_head_rank" />
+
+            <TextView
+                style="@style/LeaderboardTableCol2"
+                android:id="@+id/activity_leaderboard_txtview_table_col_username"
+                android:layout_toRightOf="@id/activity_leaderboard_txtview_table_col_rank"
+                android:textSize="17dp"
+                android:textStyle="bold"
+                android:text="@string/leaderboard_txtview_table_head_username"/>
+
+            <TextView
+                style="@style/LeaderboardTableCol3"
+                android:id="@+id/activity_leaderboard_txtview_table_col_rate"
+                android:layout_toLeftOf="@+id/activity_leaderboard_txtview_table_col_country"
+                android:textSize="17dp"
+                android:textStyle="bold"
+                android:text="@string/leaderboard_txtview_table_head_rate"/>
+
+            <TextView
+                style="@style/LeaderboardTableCol4"
+                android:id="@+id/activity_leaderboard_txtview_table_col_country"
+                android:layout_centerVertical="true"
+                android:gravity="center"
+                android:textSize="17dp"
+                android:textStyle="bold"
+                android:text="@string/leaderboard_txtview_table_head_country" />
+            </RelativeLayout>
+
+        <!--table-->
+        <ListView
+            android:layout_width="match_parent"
+            android:layout_height="fill_parent"
+            android:id="@+id/activity_leaderboard_listview_ranking"
+            android:scrollbars="vertical"
+            android:divider="@android:color/darker_gray"
+            android:dividerHeight="1dp"/>
+        </LinearLayout>
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="40dp" />
+
+
+</LinearLayout>
